@@ -6,21 +6,44 @@ body {
   padding-left: 5em;
   padding-right: 5em;
 }
-/* header */
+
 header {
   display: flex;
   justify-content: space-between;
 }
 
-div#contact {
+div#logo {
+  padding-right: 4em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+h1 {
+  font-size: xxx-large;
+  margin-bottom: 0em;
+}
+
+  hr {
+  width: 12.4em;
+  margin-left: 0;
+  border-width: medium;
+  border-color: #DEBF79;
+  border-style: solid;
+}
+
+a {
   color: #DEBF79;
   font-weight: bold;
-  padding-top: .5em;
   text-decoration: none;
 }
 
-div#logo {
-  padding-right: 4em;
+/*BEGIN HOMEPAGE CSS */
+/*Header */
+div#contact {
+  padding-top: .5em;
 }
 
 /* boxes row */
@@ -28,11 +51,6 @@ div#box-row {
   display: flex;
   align-items: stretch;
   text-align: center;
-}
-
-div#box-row h2 {
-  font-weight: bold;
-  font-size: xx-large;
 }
 
 div#box-row p {
@@ -80,23 +98,6 @@ div#box-row button {
 }
 
 /* bottom row */
-div#text-row h1 {
-  font-size: xxx-large;
-  margin-bottom: 0em;
-}
-
-div#text-row hr {
-  width: 12.4em;
-  margin-left: 0;
-  border-width: medium;
-  border-color: #DEBF79;
-  border-style: solid;
-}
-
-div#text-row a {
-  color: #DEBF79;
-}
-
 .arrayShow {
   display: block;
 }
@@ -104,19 +105,14 @@ div#text-row a {
 .arrayHide {
   display: none;
 }
-
 /*END HOMEPAGE CSS*/
 
 /*BEGIN CONTACT PAGE CSS */
-
 div#contact {
   display: flex;
   flex-direction: column;
 }
 
 /*Header row*/
-div#home-link a {
-  color: #DEBF79;
-  text-decoration: none;
-}
+
 
