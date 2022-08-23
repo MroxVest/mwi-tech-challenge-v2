@@ -23,7 +23,7 @@ export default function Home() {
   }
 
   return (
-      <>
+      <div id="home">
       <header>
           <div id="logo">
               <Image src={logo} alt="Midwestern Interactive logo and MIDWESTERN in text" width={280} height={65} />
@@ -65,6 +65,6 @@ export default function Home() {
       </ul>
       <p id="array-notice" className="arrayHide">The array is already showing.</p>
   </div>
-  </>
+  </div>
   );
 }
