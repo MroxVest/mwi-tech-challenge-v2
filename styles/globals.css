@@ -115,7 +115,7 @@ div#contact {
 }
 
 /*Header row*/
-div#home-link {
+div#home-link a {
   color: #DEBF79;
   text-decoration: none;
 }
