@@ -3,7 +3,7 @@ import logo from '../public/Logo.png'
 
 export default function ContactPage () {
     return (
-        <div id="contact">
+    <div id="contact">
         <header>
           <div id="logo">
               <Image src={logo} alt="Midwestern Interactive logo and MIDWESTERN in text" width={280} height={65} />
@@ -11,7 +11,7 @@ export default function ContactPage () {
           <div id="home-link">
               <a href="\">home</a>
           </div>
-  </header>
-  </div>
+        </header>
+    </div>
     );
 }

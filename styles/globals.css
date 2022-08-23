@@ -104,3 +104,19 @@ div#text-row a {
 .arrayHide {
   display: none;
 }
+
+/*END HOMEPAGE CSS*/
+
+/*BEGIN CONTACT PAGE CSS */
+
+div#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header row*/
+div#home-link {
+  color: #DEBF79;
+  text-decoration: none;
+}
+
