@@ -7,16 +7,12 @@ body {
   padding-right: 5em;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-div#logo {
+#logo {
   padding-right: 4em;
 }
 
 h2 {
+  color: #000;
   font-weight: bold;
   font-size: xx-large;
 }
@@ -26,7 +22,7 @@ h1 {
   margin-bottom: 0em;
 }
 
-  hr {
+hr {
   width: 12.4em;
   margin-left: 0;
   border-width: medium;
@@ -40,25 +36,7 @@ a {
   text-decoration: none;
 }
 
-/*BEGIN HOMEPAGE CSS */
-/*Header */
-div#contact {
-  padding-top: .5em;
-}
-
-/* boxes row */
-div#box-row {
-  display: flex;
-  align-items: stretch;
-  text-align: center;
-}
-
-div#box-row p {
-  color: #858585;
-  font-size: smaller;
-}
-
-div#box-row button {
+button {
   background: #DEBF79;
   border: none;
   color: #FFF;
@@ -69,12 +47,35 @@ div#box-row button {
   font-family: 'Poppins', sans-serif;
 }
 
+/*BEGIN HOMEPAGE CSS */
+/*Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact {
+  padding-top: .5em;
+}
+
+/* boxes row */
+#box-row {
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+}
+
+#box-row p {
+  color: #858585;
+  font-size: smaller;
+}
+
+
 #box-1, #box-2, #box-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #FFF;
-  color: #000;
   padding: 2em;
   text-align:justify;
   border-radius: 1%;;
@@ -108,11 +109,53 @@ div#box-row button {
 /*END HOMEPAGE CSS*/
 
 /*BEGIN CONTACT PAGE CSS */
-div#contact {
+#contact-page {
   display: flex;
-  flex-direction: column;
 }
 
-/*Header row*/
+#contact-left, #contact-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 
+/*left-side css */
+#contact-text-row {
+  padding: 9em 5em 5em;
+}
+
+/*right-side css */
+#contact-right {
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #FFF;
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+/*home link*/
+#home-link {
+  margin-top: -4em;
+}
+
+/*form section css */
+#contact-form-row {
+  align-self: flex-start;
+}
+
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.textfield {
+  width: 50%;
+  height: auto;
+}
+
+#message {
+  width: 100%;
+}
 
