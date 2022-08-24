@@ -47,7 +47,7 @@ button {
   font-family: 'Poppins', sans-serif;
 }
 
-/*BEGIN HOMEPAGE CSS */
+/***********BEGIN HOMEPAGE CSS***********/
 /*Header */
 header {
   display: flex;
@@ -106,9 +106,9 @@ header {
 .arrayHide {
   display: none;
 }
-/*END HOMEPAGE CSS*/
+/***********END HOMEPAGE CSS***********/
 
-/*BEGIN CONTACT PAGE CSS */
+/***********BEGIN CONTACT PAGE CSS***********/
 #contact-page {
   display: flex;
 }
@@ -120,6 +120,10 @@ header {
 }
 
 /*left-side css */
+#contact-left #logo {
+  padding-left: 4em;
+}
+
 #contact-text-row {
   padding: 9em 5em 5em;
 }
@@ -133,11 +137,6 @@ header {
   padding-left: 5em;
 }
 
-/*home link*/
-#home-link {
-  margin-top: -4em;
-}
-
 /*form section css */
 #contact-form-row {
   align-self: flex-start;
@@ -147,15 +146,51 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .textfield {
   width: 50%;
   height: auto;
+  margin: .5em 0em .5em 0em;
+}
+
+input {
+  width: 80%;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F5F5;
+  border: none;
+}
+
+#fname, #title {
+  text-align: start;
+}
+
+#lname, #email {
+  text-align: end;
 }
 
 #message {
   width: 100%;
 }
 
+#message textarea {
+  width: 100%;
+  height: 8em;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F5F5;
+  border: none;
+  padding: 5px;
+}
+/***********END CONTACT PAGE CSS***********/
+
+/***********BEGIN MOBILE CSS***********/
+@media only screen and (max-width: 875px) {
+  #box-row, #contact-page {
+    flex-wrap: wrap;
+  }
+
+  #contact-left, #contact-right {
+    width: 100%;
+  }
+}

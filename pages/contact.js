@@ -22,16 +22,16 @@ export default function ContactPage () {
             <div id="contact-form-row">
                 <h2>Heading Two</h2>
                 <form id="contact-form">
-                    <div className="textfield">
+                    <div className="textfield" id="fname">
                         <input type="text" placeholder="Input 1" />
                     </div>
-                    <div className="textfield">
+                    <div className="textfield" id="lname">
                         <input type="text" placeholder="Input 2" />
                     </div>
-                    <div className="textfield">
+                    <div className="textfield" id="title">
                         <input type="text" placeholder="Input 3" />
                     </div>
-                    <div className="textfield">
+                    <div className="textfield" id="email">
                         <input type="text" placeholder="Input 4" />
                     </div>
                     <div className="textfield" id="message">
