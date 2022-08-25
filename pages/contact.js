@@ -26,19 +26,19 @@ export default function ContactPage () {
                     <h2>Heading Two</h2>
                     <form id="contact-form">
                         <div className="textfield" id="fname">
-                            <input type="text" placeholder="Input 1" />
+                            <input type="text" placeholder="First Name" />
                         </div>
                         <div className="textfield" id="lname">
-                            <input type="text" placeholder="Input 2" />
+                            <input type="text" placeholder="Last Name" />
                         </div>
                         <div className="textfield" id="title">
-                            <input type="text" placeholder="Input 3" />
+                            <input type="text" placeholder="Title" />
                         </div>
                         <div className="textfield" id="email">
-                            <input type="text" placeholder="Input 4" />
+                            <input type="text" placeholder="Email" />
                         </div>
                         <div className="textfield" id="message">
-                            <textarea placeholder="Textarea"></textarea>
+                            <textarea placeholder="Message"></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </form>
