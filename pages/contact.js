@@ -2,6 +2,33 @@ import Image from 'next/image'
 import logo from '../public/Logo.png'
 
 export default function ContactPage () {
+    const [form, setForm] = useState({
+        name: "",
+        position: "",
+        level: "",
+      });
+       // This function will handle the submission.
+ async function onSubmit(e) {
+    e.preventDefault();
+  
+    // When a post request is sent to the create url, we'll add a new record to the database.
+    const newContact = { ...form };
+  
+    await fetch("http://localhost:5000/response/add", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newContact),
+    })
+    .catch(error => {
+      window.alert(error);
+      return;
+    });
+  
+    setForm({ firstName: "", lastName: "", title: "", email: "", message: "" });
+    navigate("/");
+  }
     return (
     <div id="contact-page">
         <header>
@@ -24,7 +51,7 @@ export default function ContactPage () {
             <div id="contact-right">
                 <div id="contact-form-row">
                     <h2>Heading Two</h2>
-                    <form id="contact-form">
+                    <form id="contact-form" onSubmit={onSubmit}>
                         <div className="textfield" id="fname">
                             <input type="text" placeholder="First Name" />
                         </div>
@@ -40,11 +67,11 @@ export default function ContactPage () {
                         <div className="textfield" id="message">
                             <textarea placeholder="Message"></textarea>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" value="Create contact">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     );
-}
+  }
