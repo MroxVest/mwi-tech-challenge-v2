@@ -8,8 +8,11 @@ const handleSubmit = async (event) => {
 
     // Get data from the form.
     const data = {
-      first: event.target.first.value,
-      last: event.target.last.value,
+      fname: event.target.fname.value,
+      lname: event.target.lname.value,
+      title: event.target.title.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
     }
 
     // Send the data to the server in JSON format.

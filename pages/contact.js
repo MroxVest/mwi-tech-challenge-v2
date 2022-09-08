@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '../public/Logo.png'
+import './api/form.js'
 
 export default function ContactPage () {
     const [form, setForm] = useState({

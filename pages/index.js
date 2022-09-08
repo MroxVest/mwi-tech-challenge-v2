@@ -23,7 +23,7 @@ export default function Home(data) {
       <div id="home">
       <header>
           <div id="logo">
-              <Image src={data.log.link} alt="Midwestern Interactive logo and MIDWESTERN in text" width={280} height={65} />
+              <Image src={data.logo.link} alt="Midwestern Interactive logo and MIDWESTERN in text" width={280} height={65} />
           </div>
           <div id="contact">
               <a href="\contact">contact</a>
