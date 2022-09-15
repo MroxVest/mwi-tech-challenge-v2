@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import  '../styles/Home.module.css'
 import './api/content.js'
+import { connectToDatabase } from "../server/db/conn.js"
 
-export default function Home() {
+export default function Home({ content }) {
   const array1 = ['Matt Johnson', 'Matt Johnson', 'Bart Paden', 'Ryan Doss', 'Jared Malcolm'];
   const array2 = ['Matt Johnson', 'Bart Paden', 'Bart Paden', 'Jordan Heigle', 'Jordan Heigle', 'Tyler Viles'];
   const addedArray = array1.concat(array2);
   const resultArray = [...new Set(addedArray)];
-  const data = db.collection('content').find({});
+  const data = db.collection('NextAppData.content').find({});
 
   function handleClick(){
       if (document.getElementById("array-row").classList.contains("arrayShow")) {

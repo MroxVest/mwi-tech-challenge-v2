@@ -3,17 +3,19 @@ import logo from '../public/Logo.png'
 import './api/form.js'
 
 export default function ContactPage () {
-    const [form, setForm] = useState({
-        name: "",
-        position: "",
-        level: "",
-      });
+   /*  const [form, setForm] = useState({
+        fname: "",
+        lname: "",
+        title: "",
+        email: "",
+        message: ""
+      }); */
        // This function will handle the submission.
  async function onSubmit(e) {
     e.preventDefault();
   
     // When a post request is sent to the create url, we'll add a new record to the database.
-    const newContact = { ...form };
+    /* const newContact = { ...form };
   
     await fetch("http://localhost:5000/response/add", {
       method: "POST",
@@ -28,8 +30,8 @@ export default function ContactPage () {
     });
   
     setForm({ firstName: "", lastName: "", title: "", email: "", message: "" });
-    navigate("/");
-  }
+    navigate("/"); */
+  } 
     return (
     <div id="contact-page">
         <header>
