@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Next/Node project created for the MWI tech challenge.
 
-## Getting Started
+The frontend of the project is completed in React/Next with the backend in Node. The app consists of two pages, an index page and a contact form page. The goal of these pages is to display text in boxes as well as static and show a calculated array when a link is clicked (index page) as well as a contact form that takes in information (contact form page). 
 
-First, run the development server:
+Utilizing React/Next was a new tool for me as I have never used either before, however I was able to find my way and complete the frontend challenge.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Backend is a skillset that I have not fully acquired yet but hope to do so soon. The backend challenge was a true test of all my skillsets and while the project does not work properly, I do feel that I have learned a lot and hope to learn more in the future in order to build something similar one day.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This challenge as a whole took one month to get as far as I could and was a true test of my skills. This challenge was exciting and a real learning process. I hope to continue to grow my skills and be able to build even better projects in the future.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To utilize this app:
+Run using node commands (after cloning project):
+  -Navigate to the server folder and run node server.js
+  -Open second command line and navigate back to main folder and run npm run dev (build will fail)
+  -Open http://localhost:3000 to view.
+ *It's best to run the app without the backend in order to view the frontend because the backend does not work properly. 
+ 
+ Thank you for your time and effort viewing my tech challenge project for MWI.
